@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap');
+
+:root {
+    --main: #009000;
+    --sec: white;
+    --highlight: #cce0cc;
+}
+::selection {
+    background: var(--highlight);
+    color: var(--main);
+}
+
+html,
+body {
+    background-color: var(--sec);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 64px;
+    margin: 10px 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 32px;
+    margin: 10px 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 10px 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+p,
+li {
+    margin: 10px 5px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+a.link {
+    color: var(--main);
+    margin: 10px 5px;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a.link:hover {
+    background: var(--highlight);
+    border-radius: 4px;
+}
+
+button {
+    margin: 10px 5px;
+    transition-duration: 0.2s;
+    border-radius: 8px;
+    border: 2px solid var(--main);
+    background-color: var(--sec);
+    color: var(--main);
+    font-family: 'Roboto Mono', monospace;
+    padding: 5px 10px;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+button:hover {
+    border: 2px solid var(--main);
+    background-color: var(--main);
+    color: var(--sec);
+}
+
+button:active {
+    /* https://codepen.io/EasyBoarder/pen/YqMRMK */
+    -webkit-box-shadow: inset 1px 1px 5px #333;
+    -moz-box-shadow: inset 1px 1px 5px #333;
+    box-shadow: inset 1px 1px 5px #333;
+}
+
+.material-symbols-outlined {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.reg {
+    border: none;
+    background-color: var(--sec);
+    color: var(--main);
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    margin: 0px;
+    padding: 5px 10%;
+}
+
+.em  {
+    border: 2px solid var(--main);
+    background-color: var(--main);
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 0px; 
+    padding: 5px 10%;
+}
+
+.par {
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 0px;
+    padding: 5px 10%;
+    
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    border-radius: 8px;
+    border: 2px solid var(--main);
+    margin: 2px;
+    padding: 10px 20px;
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    transition-duration: 0.3s;
+    width: auto;
+    width: 500px;
+}
+
+.card:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (min-width: 850px) {
+    .em {
+        padding: 5px 20%;
+    }
+    .reg {
+        padding: 5px 20%;
+    }
+}
