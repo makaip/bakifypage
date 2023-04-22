@@ -162,3 +162,13 @@ button:active {
         padding: 5px 20%;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .em {
+        padding: 5px 25%;
+    }
+
+    .reg {
+        padding: 5px 25%;
+    }
+}
